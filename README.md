@@ -9,6 +9,7 @@ This module will use the [tintColor]((https://developer.apple.com/documentation/
 Setting the `tintColor` to `rgb(0,0,0)` will result in your native views to display like this.
 
 ![Example image](/example.png)
+> ✋ This code module only supports iOS, calling the method in Android will reject the Promise.
 
 ## Installation
 
@@ -20,10 +21,12 @@ npm install react-native-window-tint-color
 
 ```js
 import WindowTintColor from "react-native-window-tint-color";
+import { Platform } from 'react-native';
 
-// ...
-
-const result = await WindowTintColor.setTintColor(255, 0, 0);
+// Android platform doesn't appear to support theming without XML files
+if (Platform.OS === 'ios') {
+    await WindowTintColor.setTintColor(255, 0, 0);
+}
 ```
 
 ## Contributing
