@@ -53,7 +53,7 @@ yarn test
 
 To edit the Objective-C files, open `example/ios/WindowTintColorExample.xcworkspace` in XCode and find the source files at `Pods > Development Pods > react-native-window-tint-color`.
 
-To edit the Kotlin files, open `example/android` in Android studio and find the source files at `reactnativewindowtintcolor` under `Android`.
+To edit the Java files, open `example/android` in Android studio and find the source files at `reactnativewindowtintcolor` under `Android`.
 
 ### Commit message convention
 

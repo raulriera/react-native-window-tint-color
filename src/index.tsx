@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
 type WindowTintColorType = {
-  multiply(a: number, b: number): Promise<number>;
+  setTintColor(red: number, green: number, blue: number): Promise<number>;
 };
 
 const { WindowTintColor } = NativeModules;

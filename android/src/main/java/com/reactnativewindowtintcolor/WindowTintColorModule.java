@@ -26,9 +26,9 @@ public class WindowTintColorModule extends ReactContextBaseJavaModule {
     // Example method
     // See https://reactnative.dev/docs/native-modules-android
     @ReactMethod
-    public void multiply(int a, int b, Promise promise) {
-        promise.resolve(a * b);
+    public void setTintColor(int red, int green, int blue, Promise promise) {
+        promise.reject("Not supported in this platform");
     }
 
-    public static native int nativeMultiply(int a, int b);
+    public static native int nativeSetTintColor(int red, int green, int blue);
 }

@@ -1,6 +1,6 @@
 {
   "name": "react-native-window-tint-color",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React Native Module to globally tint the keyWindow",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -34,7 +34,7 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "tint color"
   ],
   "repository": "https://github.com/raulriera/react-native-window-tint-color",
   "author": "Raul Riera <rieraraul@gmail.com> (https://github.com/raulriera)",
@@ -80,7 +80,6 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "yarn lint && yarn typescript"
     }
   },
