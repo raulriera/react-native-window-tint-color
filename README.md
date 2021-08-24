@@ -4,12 +4,14 @@ Stop shipping to production that default blue color in iOS apps when the user is
 
 This module will use the [tintColor]((https://developer.apple.com/documentation/uikit/uiview/1622467-tintcolor)) property in iOS to globally change the color of the native views accent color to match your own style.
 
+If you want to learn more why this module was created, check out [this article](https://raulriera.medium.com/remove-that-blue-color-from-your-react-native-applications-7964fd0e87a3?sk=3d2207113b8797122673be4dea2bb053) in my blog.
+
 ## Example
 
-Setting the `tintColor` to `rgb(0,0,0)` will result in your native views to display like this.
+Setting the `tintColor` to `rgb(0,0,0)` will result in the accent color of your native views turning black and looking like this.
 
 ![Example image](/example.png)
-> ✋ This code module only supports iOS, calling the method in Android will reject the Promise.
+> ✋ This module only supports iOS, calling the method in Android will reject the Promise.
 
 ## Installation
 
