@@ -15,7 +15,7 @@ RCT_REMAP_METHOD(setTintColor,
         return;
     }
         
-    UIColor *color = [UIColor colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:1.0];
+    UIColor *color = [UIColor colorWithRed:(CGFloat)red/255.0 green:(CGFloat)green/255.0 blue:(CGFloat)blue/255.0 alpha:1.0];
     UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
     [keyWindow setTintColor: color];
     
